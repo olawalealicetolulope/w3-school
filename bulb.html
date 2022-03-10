@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function turnOn() {
+        document.getElementById('my-image').src="./image/pic_bulbon.gif"
+    }
+    function turnOff() {
+        document.getElementById('my-image').src="./image/pic_bulboff.gif" 
+    }
+</script>
+<body>
+    <!-- <script type="text/javascript">
+        function trunOff(){
+            var off = document.getElementById('off');{
+            
+            if (image.src)
+         image.src = "off.src"
+     else{
+         image.src = "on.src";
+    }
+    }
+}
+        
+    </script>
+    <center>
+        <button onclick="trunOff()" style="background-color: blue; color: white;">
+            <p id="off" style="font-size:16px;">
+        Turn off the bulb
+    </p>
+        </button>
+        <div id="image">
+            <img src="/image/pic_bulboff.gif" alt="" id="off">
+            <img src="/image/pic_bulbon.gif" alt=""id="on" style="display: none;">
+        </div>
+
+        <button onclick="trunOn()" style="background-color: blue; color: white;">
+            <p id="on" style="font-size: 16px;">
+            Turn on the bulb
+        </p>
+        </button>
+    </center> -->
+    <center>
+        <button onclick="turnOn()">Turn On</button>
+        <img src="./image/pic_bulboff.gif" alt="" id="my-image">
+        <!-- <img src="./image/pic_bulbon.gif" alt=""> -->
+        <button onclick="turnOff()">Turn Off</button>
+    </center>
+    
+</body>
+</html>
